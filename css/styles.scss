@@ -2,14 +2,18 @@
 // IMPORT SETUP STYLES
 //====================================================
 @import "setup";
+@import "bourbon/bourbon"; 
+@import "neat/neat"; 
 
 // ===================================================
 // VARIABLES & MIXINS
 //====================================================
-$black: #383838;   
+$black: #393939;   
 $blue: #1893cc;
 $green: #bed993;     
-$white: #f7f6ed; 
+$white: #f5f4ee; 
+$pink: #E75C78;
+$visual-grid:true;
 
 @mixin nicebox(){
 	box-shadow: 0px 2px 10px rgba(0,0,0,.3),0px 0px 1px rgba(0,0,0,.1),inset 0px 1px 0px rgba(255,255,255,.25),inset 0px -1px 0px rgba(0,0,0,.15);
@@ -24,17 +28,25 @@ a{
 body{
 	overflow-x:hidden;
 }
-
-
-// ===================================================
-// HEADER STYLES
-// ===================================================
-
 main{
 	max-width: 1170px;
 	margin:0 auto;
 	background: $blue;
 }
+
+// ===================================================
+// HEADER STYLES
+// ===================================================
+.hero-wrapper{
+	@include outer-container;
+}
+.hero-text{
+	@include span-columns(6);
+}
+.hero-social{
+	@include span-columns(8);
+}
+
 
 footer{
 	padding: 5%;

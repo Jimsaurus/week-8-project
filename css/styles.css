@@ -127,6 +127,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 /* END OF SETUP STYLES */
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 a {
   text-decoration: none; }
 
@@ -138,8 +146,33 @@ main {
   margin: 0 auto;
   background: #1893cc; }
 
+.hero-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .hero-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.hero-text {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .hero-text:last-child {
+    margin-right: 0; }
+
+.hero-social {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .hero-social:last-child {
+    margin-right: 0; }
+
 footer {
   padding: 5%;
   text-align: center;
   background: #bed993;
-  color: #f7f6ed; }
+  color: #f5f4ee; }
