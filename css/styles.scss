@@ -9,11 +9,13 @@
 // VARIABLES & MIXINS
 //====================================================
 $black: #393939;   
-$blue: #1893cc;
-$green: #bed993;     
+$blue: #0C7AC2;
+$green: #60BEA8;     
 $white: #f5f4ee; 
 $pink: #E75C78;
 $grey: #eee;
+$bg-grey: #FFF;
+$max-width: 1170px;
 
 @mixin flexrow(){
 	display: flex;
@@ -38,6 +40,9 @@ $grey: #eee;
 // ===================================================
 // GENERAL STYLES
 // ===================================================
+html{
+	font-size: 62.5%;
+}
 a{
 	text-decoration: none;
 	color: $black;
@@ -49,9 +54,10 @@ h1, h2, h3, h4, h5, h6{
 body{
 	overflow-x:hidden;
 	font-family: 'Josefin Sans';
+	font-size: 1.6rem;
 }
 main{
-	max-width: 1170px;
+	max-width: $max-width;
 	margin:0 auto;
 }
 
@@ -135,14 +141,86 @@ nav{
 // ===================================================
 // PORTFOLIO STYLES
 // ===================================================
+.portfolio-wrapper{
+	@include flexcol();
+}
+.portfolio-header{
+	text-align: center;
+}
+.portfolio-items-wrapper{
+	@include flexrow();
+	width: 100%;
+}
+.portfolio-item{
+	@include flexrow();
+	width: $max-width/2;
+}
+.portfolio-item-img{
+	@include flexcol();
+	position: relative;
+	width:50%;
+	img{
+		width: 100%;
+	}
+}
+.portfolio-item-text{
+	@include flexcol();
+	width: 50%;
+}
+.portfolio-share{
+	@include flexrow();
+	position: absolute;
+	bottom: 17px;
+	left: 19px;
+	font-size: 1.2rem;
+	span{
+		padding:1rem;
+		margin: 0.2rem;
+		background: $pink;
+		color: $white;
+		border-radius: 15px;
+		&:first-child{
+			background: $blue;
+		}
+		&:last-child{
+			background: $green;
+		}
+	}
+}
 
 // ===================================================
 // LEARNING STYLES
 // ===================================================
+.learning{
+	background: url(../assets/learning-bg.jpg);
+	@include bg();
+}
+.learning-text{
+	width: 50%;
+}
 
 // ===================================================
 // CONTACT STYLES
 // ===================================================
+.contact-wrapper{
+	@include flexrow();
+	width: 100%;
+	form{
+		@include flexcol();
+	}
+}
+.contact-header{
+	width:50%;
+}
+.contact-form{
+	width: 50%;
+}
+.form-top{
+	@include flexrow();
+}
+.form-left{
+	@include flexcol();
+}
 
 // ===================================================
 // FOOTER STYLES
