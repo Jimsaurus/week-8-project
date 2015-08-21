@@ -70,6 +70,17 @@ main{
 p{
 	line-height: 1.8;
 }
+.tagline{
+	font-size: 2rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+p.lead{
+	font-family: 'Coustard', serif;
+	font-size: 4rem;
+	line-height: 1;
+	margin: 10px 0;
+}
 
 // ===================================================
 // NAV STYLES
@@ -88,7 +99,7 @@ nav{
 .nav-wrapper{
 	@include flexrow();
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 }
 .nav-brand{
 	width: 20%;
@@ -97,10 +108,10 @@ nav{
 	padding-right: 25px;
 }
 .nav-links{
-	width: 60%;
+	width: 70%;
 	@include flexrow();
 	justify-content: flex-end;
-	border-right: 1px solid $grey;
+	align-items: center;
 	
 }
 .nav-main{
@@ -118,8 +129,10 @@ nav{
 }//nav-main
 
 .nav-mobile{
-	width: 20%;
+	@include flexrow();
+	width: 10%;
 	padding-left: 25px;
+	border-left: 1px solid $grey;
 	button{
 		background: none;
 		border: none;
@@ -184,7 +197,7 @@ nav{
 .hero-social{
 	@include flexrow();
 	position: absolute;
-	bottom:0;
+	bottom:12px;
 	left: 15%;
 	height: 55px;
 	align-items: flex-end;
@@ -258,18 +271,44 @@ nav{
 	@include flexcol();
 	@include span-columns(6);
 	text-align: center;
-	margin:auto;
+	margin: auto;
+	padding: 10px;
+}
+.about-icon-wrapper{
+	@include flexrow();
+	justify-content: center;
+	div{
+		width: 46px;
+		margin-right: 8px;
+		img{
+		width: 100%;
+		}
+	}
+	
 }
 .about-skills-wrapper{
 	@include flexcol();
-	@include span-columns(6)
-
+	@include span-columns(6);
+	padding: 10px;
 }
 .about-skill{
 	@include flexrow();
 	h4{
-		margin-top: 0;
+		margin:5px 0 10px 0;
 	}
+}
+.skill-icon{
+	width: 15%;
+	font-size: 4rem;
+}
+
+.skill-text{
+	width: 85%;
+	border-bottom: 1px solid darken($grey, 12%);
+	margin-bottom: 20px;
+}
+.skill-last{
+	border:0;
 }
 
 
