@@ -23,6 +23,11 @@ gulp.task('styles', function(){
 			.pipe(browserSync.stream());
 });
 
+// reload task
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
 gulp.task('jshint', function(){
 	return gulp.src('js/*.js')
 		.pipe(jshint())
@@ -36,6 +41,14 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', function(){
 	gulp.watch('css/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['jshint']);
+	gulp.watch('*.html', ['bs-reload']);
 });
 
 gulp.task('default', ['browser-sync', 'styles', 'jshint', 'watch']);
+
+
+
+
+
+
+
