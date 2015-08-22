@@ -31,7 +31,8 @@
 }
 .portfolio-item{
 	@include flexrow();
-	width: $max-width/2 - 20px;
+	width: $max-width/2 - 40px;
+	margin: 5px;
 }
 .portfolio-item-img{
 	@include flexcol();
@@ -59,10 +60,14 @@
 }
 .portfolio-share{
 	@include flexrow();
+	background: rgba(#F6F6F6, 1);
+	padding: 10px 0;
 	position: absolute;
-	bottom: 17px;
-	left: 13px;
+	justify-content: center;
+	bottom: 30px;
+	left: 0;
 	font-size: 1.2rem;
+	width: 100%;
 	span{
 		padding:1rem;
 		margin: 0.2rem;
