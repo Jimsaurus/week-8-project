@@ -3,6 +3,9 @@
 // ===================================================
 .about{
 	background: linear-gradient(135deg, $blue, $green);
+	.underline{
+		border-bottom: 2px solid $green;
+	}
 }
 .about-wrapper{
 	@include section();

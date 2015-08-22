@@ -56,7 +56,7 @@ p.lead{
 }
 h3{
 	font-size: 4rem;
-	margin: 0 0 15px 0;
+	margin: 0 0 5px 0;
 }
 h5{
 	margin: 10px 0 15px 0;
@@ -64,9 +64,13 @@ h5{
 }
 h6{
 	color: $white;
-
+	margin-bottom: 10px;
 }
-
+.underline{
+	width:150px;
+	border-bottom: 2px solid $blue;
+	margin: auto;
+}
 
 
 

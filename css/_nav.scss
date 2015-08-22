@@ -30,9 +30,10 @@ nav{
 		display: inline;
 		padding: 10px 15px;
 		margin-right: 10px;
-		border: 1px solid transparent;
+		border-bottom: 2px solid transparent;
+		@include transition();
 		&:hover{
-			border: 1px solid $black;
+			border-bottom: 2px solid $blue;
 		}//hover
 	}//li
 }//nav-main
@@ -45,5 +46,16 @@ nav{
 	button{
 		background: none;
 		border: none;
+		@include transition();
+		&:hover{
+			color: $blue;
+		}
 	}
 }
+
+
+
+
+
+
+

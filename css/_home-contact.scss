@@ -19,6 +19,10 @@
 	}
 	a{
 		color: $blue;
+		@include transition();
+		&:hover{
+			border-bottom: 2px solid $blue;
+		}//hover
 	}
 }
 .contact-form{

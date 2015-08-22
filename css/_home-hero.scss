@@ -12,15 +12,15 @@ header{
 // ===================================================
 .hero-wrapper{
 	@include section();
-	@include outer-container;
-
+	@include flexcol();
+	//justify-content: center;
+	align-items: flex-start;
 }
 .hero-text{
-	@include span-columns(4);
-	@include shift(1);
 	width: 400px;
-	padding-top: 17vh;
 	text-align: center;
+	padding-top: 10vh;
+	margin-left: 5%;
 	p{
 		margin-top: 0;
 		margin-bottom: 5px;
@@ -64,10 +64,9 @@ header{
 }
 .hero-social{
 	@include flexrow();
-	position: absolute;
-	bottom:12px;
-	left: 13%;
+	margin-left: 10%;
 	height: 55px;
+	padding-top: 10%;
 	align-items: flex-end;
 }
 .hero-social-icons{
