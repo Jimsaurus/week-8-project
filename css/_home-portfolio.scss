@@ -1,0 +1,93 @@
+// ===================================================
+// PORTFOLIO STYLES
+// ===================================================
+.portfolio{
+	background: #fff;
+}
+.portfolio-wrapper{
+	@include section();
+	padding: 50px 0;
+	@include flexcol();
+	margin:0 auto;
+}
+.portfolio-header{
+	text-align: center;
+	.tagline{
+		color: $text-grey;
+	}
+	a{
+		color: $blue;
+	}
+}
+.portfolio-items-wrapper{
+	@include flexrow();
+	justify-content: center;
+	width: 100%;
+	padding: 20px 0;
+}
+.portfolio-item{
+	@include flexrow();
+	width: $max-width/2 - 20px;
+}
+.portfolio-item-img{
+	@include flexcol();
+	position: relative;
+	width:50%;
+	img{
+		width: 100%;
+	}
+}
+.portfolio-item-text{
+	text-align: left;
+	width: 50%;
+	padding: 40px;
+	background: #F7F7F7;
+	color: $text-grey;
+
+	h5{
+		color: $black;
+	}
+}
+.portfolio-tech{
+	margin: 0;
+	color: $light-blue;
+	font-size: 1.2rem;
+}
+.portfolio-share{
+	@include flexrow();
+	position: absolute;
+	bottom: 17px;
+	left: 13px;
+	font-size: 1.2rem;
+	span{
+		padding:1rem;
+		margin: 0.2rem;
+		background: $pink;
+		color: $white;
+		border-radius: 15px;
+		&:first-child{
+			background: $blue;
+		}
+		&:last-child{
+			background: $green;
+		}
+	}//span
+}//portfolio-share
+.triangle-left{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 26.0px 15px 0;
+	border-color: transparent #F7F7F7 transparent transparent;
+	position: absolute;
+	top:35px;
+	right:0;
+}
+.overlay{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	//background: rgba($black, 0.3);
+}

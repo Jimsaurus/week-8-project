@@ -1,0 +1,53 @@
+// ===================================================
+// FOOTER STYLES
+// ===================================================
+
+footer{
+	@include flexcol();
+	width: 100%;
+	color: $text-grey;
+	font-size: 1.2rem;
+	a{
+		color: $text-grey;
+	}
+}
+.footer-top{
+	background: $footer;
+	width: 100%;
+}
+
+.footer-top-wrapper{
+	@include flexrow();
+	@include section();
+	div{
+		width: 33%;
+		text-align: center;
+		@include flexcol();
+		&:first-child, &:nth-child(2){
+			border-right: 1px solid $footer-lines;
+		}
+	}
+	.footer-social-wrapper{
+		@include flexrow();
+		width: 100%;
+		justify-content: space-between;
+		div{
+			width: 15%;
+		}
+	}
+}
+.footer-bottom{
+	width: 100%;
+	background: $footer-bottom;
+}
+.footer-bottom-wrapper{
+	@include section();
+	@include flexrow();
+	justify-content: space-between;
+	width: 100%;
+}
+.nav-footer{
+	li{
+		display: inline;
+	}
+}

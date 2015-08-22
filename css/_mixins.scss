@@ -1,0 +1,65 @@
+// ===================================================
+// VARIABLES & MIXINS
+//====================================================
+$black: #393939;   
+$blue: #2398DC;
+$light-blue: #7ECAEB;
+$green: #60BEA8;     
+$white: #f5f4ee; 
+$pink: #E75C78;
+$grey: #eee;
+$bg-grey: #F7F7F7;
+$text-grey: #838383;
+$max-width: 1170px;
+
+$footer: #252525;
+$footer-lines: #2A2A2A;
+$footer-bottom: #222222;
+
+@mixin section(){
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+}
+@mixin main-section(){
+	padding: 60px 20px;
+}
+
+@mixin transition(){
+	transition: all .3s ease;
+}
+
+@mixin flexrow(){
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+@mixin flexcol(){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@mixin bg(){
+	background-position: top right;
+	background-size: cover;
+}
+@mixin box-shadow(){
+	box-shadow: 0px 2px 10px rgba(0,0,0,.3),0px 0px 1px rgba(0,0,0,.1),inset 0px 1px 0px rgba(255,255,255,.25),inset 0px -1px 0px rgba(0,0,0,.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

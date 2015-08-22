@@ -1,0 +1,56 @@
+// ===================================================
+// ABOUT STYLES
+// ===================================================
+.about{
+	background: linear-gradient(135deg, $blue, $green);
+}
+.about-wrapper{
+	@include section();
+	@include flexrow();
+	@include outer-container;
+	@include main-section();
+	color: $white;
+}
+.about-text{
+	@include flexcol();
+	@include span-columns(6);
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+}
+.about-icon-wrapper{
+	@include flexrow();
+	justify-content: center;
+	div{
+		width: 41px;
+		margin-right: 8px;
+		img{
+		width: 100%;
+		}
+	}
+	
+}
+.about-skills-wrapper{
+	@include flexcol();
+	@include span-columns(6);
+	padding: 10px;
+}
+.about-skill{
+	@include flexrow();
+	h4{
+		margin:5px 0 10px 0;
+	}
+}
+.skill-icon{
+	width: 15%;
+	font-size: 4rem;
+}
+
+.skill-text{
+	width: 85%;
+	border-bottom: 1px solid darken($grey, 12%);
+	margin-bottom: 20px;
+}
+.skill-last{
+	border:0;
+}

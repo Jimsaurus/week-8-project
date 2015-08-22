@@ -1,0 +1,49 @@
+// ===================================================
+// NAV STYLES
+// ===================================================
+nav{
+	border-bottom: 1px solid $grey;
+}
+.nav-wrapper{
+	@include section();
+	@include flexrow();
+	justify-content: center;
+	align-items: stretch;
+}
+.nav-brand{
+	width: 20%;
+	text-align: right;
+	border-right: 1px solid $grey;
+	padding-right: 25px;
+}
+.nav-links{
+	width: 70%;
+	@include flexrow();
+	justify-content: flex-end;
+	align-items: center;
+	
+}
+.nav-main{
+	@include flexrow();
+	justify-content: flex-end;
+	li{
+		display: inline;
+		padding: 10px 15px;
+		margin-right: 10px;
+		border: 1px solid transparent;
+		&:hover{
+			border: 1px solid $black;
+		}//hover
+	}//li
+}//nav-main
+
+.nav-mobile{
+	@include flexrow();
+	width: 10%;
+	padding-left: 25px;
+	border-left: 1px solid $grey;
+	button{
+		background: none;
+		border: none;
+	}
+}

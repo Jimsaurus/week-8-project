@@ -5,42 +5,14 @@
 @import "bourbon/bourbon"; 
 @import "neat/neat"; 
 @import "mobile-menu";
-
-// ===================================================
-// VARIABLES & MIXINS
-//====================================================
-$black: #393939;   
-$blue: #0C7AC2;
-$green: #60BEA8;     
-$white: #f5f4ee; 
-$pink: #E75C78;
-$grey: #eee;
-$bg-grey: #FFF;
-$max-width: 1170px;
-
-@mixin transition(){
-	transition: all .3s ease;
-}
-
-@mixin flexrow(){
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-@mixin flexcol(){
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-@mixin bg(){
-	background-position: center;
-	background-size: cover;
-}
-@mixin box-shadow(){
-	box-shadow: 0px 2px 10px rgba(0,0,0,.3),0px 0px 1px rgba(0,0,0,.1),inset 0px 1px 0px rgba(255,255,255,.25),inset 0px -1px 0px rgba(0,0,0,.15);
-}
-
+@import "mixins";
+@import "nav";
+@import "home-hero";
+@import "home-about";
+@import "home-portfolio";
+@import "home-learning";
+@import "home-contact";
+@import "footer";
 
 // ===================================================
 // GENERAL STYLES
@@ -64,372 +36,46 @@ body{
 	color: $black;
 }
 main{
-	max-width: $max-width;
 	margin:0 auto;
 }
 p{
 	line-height: 1.8;
+	letter-spacing: .6px;
 }
 .tagline{
 	font-size: 2rem;
-	line-height: 1;
+	line-height: 1.4;
 	text-transform: uppercase;
 }
 p.lead{
 	font-family: 'Coustard', serif;
 	font-size: 4rem;
 	line-height: 1;
+	letter-spacing: 2px;
 	margin: 10px 0;
 }
-
-// ===================================================
-// NAV STYLES
-// ===================================================
-header{
-	height: 100vh;
-	width: 100%;
-	background: url(../assets/hero-bg.jpg), linear-gradient(to bottom right,$black,black);
-	@include bg();
-	background-blend-mode: screen;
-	position: relative;
-}
-nav{
-	border-bottom: 1px solid $grey;
-}
-.nav-wrapper{
-	@include flexrow();
-	justify-content: center;
-	align-items: stretch;
-}
-.nav-brand{
-	width: 20%;
-	text-align: right;
-	border-right: 1px solid $grey;
-	padding-right: 25px;
-}
-.nav-links{
-	width: 70%;
-	@include flexrow();
-	justify-content: flex-end;
-	align-items: center;
-	
-}
-.nav-main{
-	@include flexrow();
-	justify-content: flex-end;
-	li{
-		display: inline;
-		padding: 10px 15px;
-		margin-right: 10px;
-		border: 1px solid transparent;
-		&:hover{
-			border: 1px solid $black;
-		}//hover
-	}//li
-}//nav-main
-
-.nav-mobile{
-	@include flexrow();
-	width: 10%;
-	padding-left: 25px;
-	border-left: 1px solid $grey;
-	button{
-		background: none;
-		border: none;
-	}
-}
-
-// ===================================================
-// HERO STYLES
-// ===================================================
-.hero-wrapper{
-	@include outer-container;
-
-}
-.hero-text{
-	@include span-columns(4);
-	@include shift(2);
-	margin-top: 17vh;
-	text-align: center;
-	p{
-		margin-top: 0;
-		margin-bottom: 5px;
-	}
-	span{
-		font-family: 'Coustard', serif;
-		font-size: 5rem;
-		margin-bottom: 20px;
-		p{
-			line-height: 1;
-			&:nth-child(2), &:nth-child(4){
-				font-size: 8rem;
-				color: $blue;
-			}//nth
-		}//p
-	}//span
-	.tagline{
-		font-size: 2rem;
-		line-height: 1;
-		text-transform: uppercase;
-		&:nth-child(3){
-			font-size: 3rem;
-		}
-		}
-}//hero-text
-.hero-buttons{
-	@include flexrow();
-	justify-content: center;
-	margin-top: 20px;
-	a{
-		padding:12px 20px 10px 20px;
-		border: 1px solid $black;
-		@include transition();
-		border-radius: 25px;
-		font-size: 1.2rem;
-		margin-right: 10px;
-		&:hover{
-			background: $blue;
-			color: $white;
-			border: 1px solid $blue;
-		}
-	}
-}
-.hero-social{
-	@include flexrow();
-	position: absolute;
-	bottom:12px;
-	left: 15%;
-	height: 55px;
-	align-items: flex-end;
-}
-.hero-social-icons{
+h3{
 	font-size: 4rem;
-	margin-right: 20px;
-	@include transition();
-	width: 35px;
-	i{
-		@include transition();
-	}
-	&:hover{
-		margin-bottom: 20px;
-		i{
-			color: $blue;
-		}
-	}
-	&:nth-child(1){
-		transform:rotate(15deg);
-		&:hover{
-			transform: rotate(0deg);
-		}
-	}
-	&:nth-child(2){
-		transform:rotate(-10deg);
-		&:hover{
-			transform: rotate(0deg);
-		}
-	}
-	&:nth-child(3){
-		transform:rotate(8deg);
-		width: 20px;
-		&:hover{
-			transform: rotate(0deg);
-		}
-	}
-	&:nth-child(4){
-		transform:rotate(-10deg);
-		&:hover{
-			transform: rotate(0deg);
-		}
-	}
-	&:nth-child(5){
-		transform:rotate(10deg);
-		&:hover{
-			transform: rotate(0deg);
-		}
-	}
-	&:nth-child(6){
-		transform:rotate(-10deg);
-		&:hover{
-			transform: rotate(0deg);
-		}
-	}
+	margin: 0 0 15px 0;
 }
-
-// ===================================================
-// ABOUT STYLES
-// ===================================================
-.about{
-	background: linear-gradient(135deg, $blue, $green);
+h5{
+	margin: 10px 0 15px 0;
+	font-size: 2rem
 }
-.about-wrapper{
-	@include flexrow();
-	@include outer-container;
-	padding: 5%;
+h6{
 	color: $white;
-}
-.about-text{
-	@include flexcol();
-	@include span-columns(6);
-	text-align: center;
-	margin: auto;
-	padding: 10px;
-}
-.about-icon-wrapper{
-	@include flexrow();
-	justify-content: center;
-	div{
-		width: 41px;
-		margin-right: 8px;
-		img{
-		width: 100%;
-		}
-	}
-	
-}
-.about-skills-wrapper{
-	@include flexcol();
-	@include span-columns(6);
-	padding: 10px;
-}
-.about-skill{
-	@include flexrow();
-	h4{
-		margin:5px 0 10px 0;
-	}
-}
-.skill-icon{
-	width: 15%;
-	font-size: 4rem;
-}
 
-.skill-text{
-	width: 85%;
-	border-bottom: 1px solid darken($grey, 12%);
-	margin-bottom: 20px;
-}
-.skill-last{
-	border:0;
 }
 
 
-// ===================================================
-// PORTFOLIO STYLES
-// ===================================================
-.portfolio-wrapper{
-	@include flexcol();
-}
-.portfolio-header{
-	text-align: center;
-}
-.portfolio-items-wrapper{
-	@include flexrow();
-	width: 100%;
-}
-.portfolio-item{
-	@include flexrow();
-	width: $max-width/2;
-}
-.portfolio-item-img{
-	@include flexcol();
-	position: relative;
-	width:50%;
-	img{
-		width: 100%;
-	}
-}
-.portfolio-item-text{
-	@include flexcol();
-	width: 50%;
-}
-.portfolio-share{
-	@include flexrow();
-	position: absolute;
-	bottom: 17px;
-	left: 19px;
-	font-size: 1.2rem;
-	span{
-		padding:1rem;
-		margin: 0.2rem;
-		background: $pink;
-		color: $white;
-		border-radius: 15px;
-		&:first-child{
-			background: $blue;
-		}
-		&:last-child{
-			background: $green;
-		}
-	}
-}
 
-// ===================================================
-// LEARNING STYLES
-// ===================================================
-.learning{
-	background: url(../assets/learning-bg.jpg);
-	@include bg();
-}
-.learning-text{
-	width: 50%;
-}
 
-// ===================================================
-// CONTACT STYLES
-// ===================================================
-.contact-wrapper{
-	@include flexrow();
-	width: 100%;
-	form{
-		@include flexcol();
-	}
-}
-.contact-header{
-	width:50%;
-}
-.contact-form{
-	width: 50%;
-}
-.form-top{
-	@include flexrow();
-}
-.form-left{
-	@include flexcol();
-}
 
-// ===================================================
-// FOOTER STYLES
-// ===================================================
 
-footer{
-	@include flexcol();
-	padding: 5%;
-	color: $black;
-	width: 100%;
-}
-.footer-top{
-	@include flexrow();
-	div{
-		width: 33%;
-	}
-	.footer-social-wrapper{
-		@include flexrow();
-		width: 100%;
-		justify-content: space-between;
-		div{
-			width: 15%;
-		}
-	}
-}
-.footer-bottom{
-	@include flexrow();
-	justify-content: space-between;
-	width: 100%;
-}
-.nav-footer{
-	li{
-		display: inline;
-	}
-}
+
+
+
+
 
 
 

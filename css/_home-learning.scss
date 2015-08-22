@@ -1,0 +1,30 @@
+// ===================================================
+// LEARNING STYLES
+// ===================================================
+.learning{
+	background: url(../assets/learning-bg.jpg), linear-gradient(135deg, rgba($black, 1), rgba($blue, .1));
+	@include bg();
+	background-blend-mode: darken;
+	color: $white;
+}
+.learning-wrapper{
+	@include section();
+	@include main-section();
+}
+.learning-text{
+	width: 61%;
+	a{
+		color: #8E007D;
+	}
+	.tagline{
+		text-transform: none;
+	}
+	h3{
+		margin:0;
+		span{
+			color: $blue;
+			font-size: 5rem;
+			text-shadow: 2px 2px rgba($white, 0.9);
+		}
+	}
+}
