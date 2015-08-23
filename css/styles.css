@@ -202,6 +202,14 @@ html {
 nav {
   border-bottom: 1px solid #eee; }
 
+.main-fly {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 50;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+  border-bottom: none; }
+
 .nav-wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -747,15 +755,15 @@ header {
   left: 0;
   font-size: 1.2rem;
   width: 100%; }
-  .portfolio-share span {
+  .portfolio-share a {
     padding: 1rem;
     margin: 0.2rem;
     background: #E75C78;
     color: #f5f4ee;
     border-radius: 15px; }
-    .portfolio-share span:first-child {
+    .portfolio-share a:first-child {
       background: #2398DC; }
-    .portfolio-share span:last-child {
+    .portfolio-share a:last-child {
       background: #60BEA8; }
 
 .triangle-left, .triangle-right {

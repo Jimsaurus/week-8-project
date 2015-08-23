@@ -27,45 +27,45 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<main class="main-wrapper">
+<main class="main-wrapper" id="home">
 <!-- ==============================================================
 HEADER
 =====================================================================-->
 <header class="header">
 	<div class="header-wrapper">
-		<nav>
+		<nav class="nav-top">
 			<div class="nav-wrapper">
 				<div class="nav-brand">
 					<p>BRAND</p>
 				</div><!--nav-brand-->
 				<div class="nav-links">
 					<ul class="nav-main">
-						<a href="home.html"><li>HOME</li></a>
-						<a href="about.html"><li>ABOUT</li></a>
-						<a href="portfolio.html"><li>PORTFOLIO</li></a>
-						<a href="blog.html"><li>BLOG</li></a>
-						<a href="contact.html"><li>CONTACT</li></a>
+						<a href="#home"><li>HOME</li></a>
+						<a href="#about"><li>ABOUT</li></a>
+						<a href="#portfolio"><li>PORTFOLIO</li></a>
+						<a href="https://medium.com/@Jimsaurus" target="_blank"><li>BLOG</li></a>
+						<a href="#contact"><li>CONTACT</li></a>
 					</ul><!--nav-main-->
 				</div><!--nav-links-->
 				<div class="nav-mobile">
 					<button class="nav-mobile-button js-menu-trigger sliding-panel-button">
 						<i class="fa fa-bars"></i>
 					</button><!--button-->
-					<!-- start of hidden mobile nav -->
-					<nav class="js-menu sliding-panel-content">
-						<ul>
-					    	<li><a href="javascript:void(0)">HOME</a></li>
-					    	<li><a href="javascript:void(0)">ABOUT</a></li>
-					    	<li><a href="javascript:void(0)">PORTFOLIO</a></li>
-					    	<li><a href="javascript:void(0)">BLOG</a></li>
-					    	<li><a href="javascript:void(0)">CONTACT</a></li>
-						</ul>
-					</nav><!--end-hidden-nav-->
-					<div class="js-menu-screen sliding-panel-fade-screen">
-					</div>
 				</div><!--nav-mobike-->
 			</div><!--nav-wrapper-->
 		</nav><!--nav-->
+		<!-- start of hidden mobile nav -->
+		<nav class="js-menu sliding-panel-content">
+			<ul>
+		    	<li><a href="#home">HOME</a></li>
+		    	<li><a href="#about">ABOUT</a></li>
+		    	<li><a href="#portfolio">PORTFOLIO</a></li>
+		    	<li><a href="https://medium.com/@Jimsaurus" target="_blank">BLOG</a></li>
+		    	<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav><!--end-hidden-nav-->
+		<div class="js-menu-screen sliding-panel-fade-screen">
+		</div>
 
 	<!-- ==============================================================
 	HERO
@@ -81,17 +81,17 @@ HEADER
 				<p class="tagline">Hi! I'm James &amp; I'm a</p>
 				<p class="tagline">Front-End Developer</p>
 				<div class="hero-buttons">
-					<a href="portfolio.html">MY WORK</a>
-					<a href="contact.html">CONTACT</a>
+					<a href="#portfolio">MY WORK</a>
+					<a href="#contact">CONTACT</a>
 				</div><!--hero-buttons-->
 			</div><!--hero-text-->
 			<div class="hero-social">
-				<div class="hero-social-icons"><a href="ca.linkedin.com/in/mcdermidjames"><i class="fa fa-linkedin"></i></a></div>
-				<div class="hero-social-icons"><a href="https://twitter.com/Jimsaurus"><i class="fa fa-twitter"></i></a></div>
-				<div class="hero-social-icons"><a href="https://www.facebook.com/jamesmcdermid"><i class="fa fa-facebook"></i></a></div>
-				<div class="hero-social-icons"><a href="http://codepen.io/Jimsaurus/"><i class="fa fa-codepen"></i></a></div>
-				<div class="hero-social-icons"><a href="https://medium.com/@Jimsaurus"><i class="fa fa-medium"></i></a></div>
-				<div class="hero-social-icons"><a href="https://github.com/Jimsaurus"><i class="fa fa-github"></i></a></div>
+				<div class="hero-social-icons"><a href="ca.linkedin.com/in/mcdermidjames" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+				<div class="hero-social-icons"><a href="https://twitter.com/Jimsaurus" target="_blank"><i class="fa fa-twitter"></i></a></div>
+				<div class="hero-social-icons"><a href="https://www.facebook.com/jamesmcdermid" target="_blank"><i class="fa fa-facebook"></i></a></div>
+				<div class="hero-social-icons"><a href="http://codepen.io/Jimsaurus/" target="_blank"><i class="fa fa-codepen"></i></a></div>
+				<div class="hero-social-icons"><a href="https://medium.com/@Jimsaurus" target="_blank"><i class="fa fa-medium"></i></a></div>
+				<div class="hero-social-icons"><a href="https://github.com/Jimsaurus" target="_blank"><i class="fa fa-github"></i></a></div>
 			</div>
 
 
@@ -101,13 +101,12 @@ HEADER
 <!-- ==============================================================
 ABOUT
 =====================================================================-->
-
-<section class="about">
+<section class="about" id="about">
 	<div class="about-wrapper">
-		<div class="about-text">
+		<div class="about-text js-fadeInElement">
 			<p class="lead">THANKS FOR STOPPPING BY!</p>
 			<div class="underline"></div>
-			<p class="tagline">I'm enthusiastic about making beautifully resonsive and dynamic websites and applications</p>
+			<p class="tagline">Here are a few tools and skills I bring with me on each and every project</p>
 			<div class="about-icon-wrapper">
 
 				<div><img src="assets/logo-html.png" alt=""></div>
@@ -156,12 +155,12 @@ ABOUT
 PORTFOLIO
 =====================================================================-->
 
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
 	<div class="portfolio-wrapper">
 		<div class="portfolio-header">
 			<h3>MY RECENT PROJECTS</h3>
 			<div class="underline"></div>
-			<p class="tagline">Check out what I've been working on <a href="portfolio.html">here</a> and over on <a href="https://github.com/Jimsaurus">Github</a></p>
+			<p class="tagline">Check out what I've been working on <a href="#portfolio">here</a> and over on <a href="https://github.com/Jimsaurus" target="_blank">Github</a></p>
 		</div><!--portfolio-header-->
 		<div class="portfolio-items-wrapper">
 
@@ -172,9 +171,9 @@ PORTFOLIO
 					<div class="triangle-left"></div>
 					<img src="assets/portfolio-01.png" alt="">
 					<div class="portfolio-share">
-						<span>VIEW ON <i class="fa fa-github"></i></span>
-						<span>VIEW LIVE <i class="fa fa-bolt"></i></span>
-						<span>SHARE <i class="fa fa-share"></i></span>
+						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
 				<div class="portfolio-item-text">
@@ -191,9 +190,9 @@ PORTFOLIO
 					<div class="triangle-left"></div>
 					<img src="assets/portfolio-02.png" alt="">
 					<div class="portfolio-share">
-						<span>VIEW ON <i class="fa fa-github"></i></span>
-						<span>VIEW LIVE <i class="fa fa-bolt"></i></span>
-						<span>SHARE <i class="fa fa-share"></i></span>
+						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
 				<div class="portfolio-item-text">
@@ -215,9 +214,9 @@ PORTFOLIO
 					<div class="triangle-right"></div>
 					<img src="assets/portfolio-03.png" alt="">
 					<div class="portfolio-share">
-						<span>VIEW ON <i class="fa fa-github"></i></span>
-						<span>VIEW LIVE <i class="fa fa-bolt"></i></span>
-						<span>SHARE <i class="fa fa-share"></i></span>
+						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
 			</div><!--portfolio-item-->
@@ -233,9 +232,9 @@ PORTFOLIO
 					<div class="triangle-right"></div>
 					<img src="assets/portfolio-04.png" alt="">
 					<div class="portfolio-share">
-						<span>VIEW ON <i class="fa fa-github"></i></span>
-						<span>VIEW LIVE <i class="fa fa-bolt"></i></span>
-						<span>SHARE <i class="fa fa-share"></i></span>
+						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
 			</div><!--portfolio-item-->
@@ -268,7 +267,7 @@ LEARNING
 CONTACT
 =====================================================================-->
 
-<section class="contact">
+<section class="contact" id="contact">
 	<div class="contact-wrapper">
 		<div class="contact-header">
 			<h3>SAY HELLO! DON'T BE SHY</h3>
@@ -329,11 +328,11 @@ FOOTER
 		<div class="footer-bottom-wrapper">
 			<p>&copy 2015 <a href="www.jamesmcdermid.ca">James McDermid</a></p>
 			<ul class="nav-footer">
-				<a href="home.html"><li>HOME</li></a>
-				<a href="about.html"><li>ABOUT</li></a>
-				<a href="portfolio.html"><li>PORTFOLIO</li></a>
-				<a href="blog.html"><li>BLOG</li></a>
-				<a href="contact.html"><li>CONTACT</li></a>
+				<a href="#home"><li>HOME</li></a>
+				<a href="#about"><li>ABOUT</li></a>
+				<a href="#portfolio"><li>PORTFOLIO</li></a>
+				<a href="https://medium.com/@Jimsaurus"><li>BLOG</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
 			</ul><!--nav-footer-->
 		</div><!--footer-bottom-wrapper-->
 	</div><!--footer-bottom-->
@@ -350,6 +349,8 @@ FOOTER
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
 	<!-- google-maps -->
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<!-- smooth-scroll -->
+	<script src="js/jquery.smooth-scroll.js"></script>
 	<!-- custom scripts -->
 	<script src="js/scripts.js"></script>
 </body>

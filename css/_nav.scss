@@ -4,6 +4,15 @@
 nav{
 	border-bottom: 1px solid $grey;
 }
+.main-fly {
+    position:fixed;
+    width:100%;
+    background: #fff;
+    z-index: 50;
+    @include box-shadow();
+    border-bottom: none;
+
+}
 .nav-wrapper{
 	@include section();
 	@include flexrow();
