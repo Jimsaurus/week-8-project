@@ -13,6 +13,7 @@
 @import "home-learning";
 @import "home-contact";
 @import "footer";
+@import "responsive";
 
 // ===================================================
 // GENERAL STYLES
@@ -66,17 +67,51 @@ h6{
 	color: $white;
 	margin-bottom: 10px;
 }
+.brand-jm a{
+	background: $blue;
+	color: $white;
+	border-radius: 50%;
+	margin-top: auto;
+	padding: 18px 10px;
+	border: 2px solid darken($white, 9%);
+	@include transition();
+	&:hover{
+		@include box-shadow();
+	}
+}
 .underline{
 	width:150px;
 	border-bottom: 2px solid $blue;
 	margin: auto;
 }
-
-
-
-
-
-
+.hideme{
+	opacity: 0;
+}
+span.typed-cursor{
+    opacity: 1;
+    font-size: 8rem;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+.typing{
+	display: inline-block;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 
 
 

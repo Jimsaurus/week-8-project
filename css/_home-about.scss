@@ -21,6 +21,20 @@
 	margin: auto;
 	padding: 10px;
 }
+.about-headshot{
+	width: 50%;
+	margin: auto;
+	display: none;
+	img{
+		width: 100%;
+		border-radius: 50%;
+		border: 3px solid darken($white, 3%);
+		@include transition();
+		&:hover{
+			@include box-shadow();
+		}
+	}
+}
 .about-icon-wrapper{
 	@include flexrow();
 	justify-content: center;

@@ -21,7 +21,6 @@ app.init = function(){
 	$(window).scroll(function () {
 	    if($(this).scrollTop() > 50){
 	        if (!$('.nav-top').hasClass('main-fly')){
-
 	            $('.nav-top').stop().addClass('main-fly').css('top', '-50px').animate({
 	                    'top': '0px'
 	                }, 500);
@@ -34,27 +33,31 @@ app.init = function(){
 	});
 
 	//show on scroll
-	var element = document.getElementById("about");
-	  $(element).addClass('js-fade-element-hide');
+	/* Every time the window is scrolled ... */
+   $(window).scroll( function(){
+       /* Check the location of each desired element */
+       $('.hideme').each( function(i){
+           
+           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+           var bottom_of_window = $(window).scrollTop() + $(window).height();
+           
+           /* If the object is completely visible in the window, fade it in */
+           if( bottom_of_window > bottom_of_object ){
+               
+               $(this).animate({'opacity':'1'},500);
+                   
+           }
+       }); 
+   });
 
-	  $(window).scroll(function() {
-	    if( $("#about").length > 0 ) {
-	      var elementTopToPageTop = $(element).offset().top;
-	      var windowTopToPageTop = $(window).scrollTop();
-	      var windowInnerHeight = window.innerHeight;
-	      var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
-	      var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
-	      var distanceFromBottomToAppear = 300;
-
-	      if(elementTopToWindowBottom > distanceFromBottomToAppear) {
-	        $(element).addClass('js-fade-element-show');
-	      }
-	      else if(elementTopToWindowBottom < 0) {
-	        $(element).removeClass('js-fade-element-show');
-	        $(element).addClass('js-fade-element-hide');
-	      }
-	    }
-	  });
+   $(".typing").typed({
+               strings: ["LEARN", "LAUGH", "TEACH", "CREATE"],
+               typeSpeed: 150,
+               backSpeed: 70,
+               startDelay: 800,
+               backDelay: 1500,
+               showCursor: true
+           });
 	
 }; // end init function
 

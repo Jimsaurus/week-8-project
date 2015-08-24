@@ -43,7 +43,7 @@
         // `this` is the triggering element
         afterScroll: function() {},
         easing: 'swing',
-        speed: 400,
+        speed: 800,
 
         // coefficient for "auto" speed
         autoCoefficient: 2,

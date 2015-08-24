@@ -36,7 +36,7 @@ HEADER
 		<nav class="nav-top">
 			<div class="nav-wrapper">
 				<div class="nav-brand">
-					<p>BRAND</p>
+					<p><span class ="brand-jm"><a href="#home">&#60;jm&#62;</a></span></p>
 				</div><!--nav-brand-->
 				<div class="nav-links">
 					<ul class="nav-main">
@@ -60,9 +60,10 @@ HEADER
 		    	<li><a href="#home">HOME</a></li>
 		    	<li><a href="#about">ABOUT</a></li>
 		    	<li><a href="#portfolio">PORTFOLIO</a></li>
-		    	<li><a href="https://medium.com/@Jimsaurus" target="_blank">BLOG</a></li>
+		    	<li><a href="https://medium.com/@Jimsaurus">BLOG</a></li>
 		    	<li><a href="#contact">CONTACT</a></li>
 			</ul>
+			<p><span class ="brand-jm"><a href="#home">&#60;jm&#62;</a></span></p>
 		</nav><!--end-hidden-nav-->
 		<div class="js-menu-screen sliding-panel-fade-screen">
 		</div>
@@ -76,7 +77,7 @@ HEADER
 					<p>LOVE TO</p>
 					<p>CODE</p>
 					<p>LOVE TO</p>
-					<p>CREATE</p>
+					<p class="typing"></p>
 				</span>
 				<p class="tagline">Hi! I'm James &amp; I'm a</p>
 				<p class="tagline">Front-End Developer</p>
@@ -103,41 +104,42 @@ ABOUT
 =====================================================================-->
 <section class="about" id="about">
 	<div class="about-wrapper">
-		<div class="about-text js-fadeInElement">
-			<p class="lead">THANKS FOR STOPPPING BY!</p>
-			<div class="underline"></div>
-			<p class="tagline">Here are a few tools and skills I bring with me on each and every project</p>
-			<div class="about-icon-wrapper">
+		<div class="about-text">
+			<div class="about-headshot hideme"><img src="assets/headshot.jpg" alt="James' face"></div>
+			<p class="lead hideme">THANKS FOR STOPPPING BY!</p>
+			<div class="underline hideme"></div>
+			<p class="tagline hideme">Here are a few tools and skills I bring with me on each and every project</p>
+			<div class="about-icon-wrapper hideme">
 
-				<div><img src="assets/logo-html.png" alt=""></div>
-				<div><img src="assets/logo-css.png" alt=""></div>
-				<div><img src="assets/logo-js.png" alt=""></div>
-				<div><img src="assets/logo-git.png" alt=""></div>
-				<div><img src="assets/logo-npm.png" alt=""></div>
-				<div><img src="assets/logo-sass.png" alt=""></div>
-				<div><img src="assets/logo-gulp.png" alt=""></div>
-				<div><img src="assets/logo-wordpress.png" alt=""></div>
-				<div><img src="assets/logo-bourbon.png" alt=""></div>
-				<div><img src="assets/logo-bootstrap.png" alt=""></div>
+				<div><img src="assets/logo-html.png" alt="html logo"></div>
+				<div><img src="assets/logo-css.png" alt="css logo"></div>
+				<div><img src="assets/logo-js.png" alt="javascript logo"></div>
+				<div><img src="assets/logo-git.png" alt="git logo"></div>
+				<div><img src="assets/logo-npm.png" alt="npm logo"></div>
+				<div><img src="assets/logo-sass.png" alt="sass logo"></div>
+				<div><img src="assets/logo-gulp.png" alt="gulp logo"></div>
+				<div><img src="assets/logo-wordpress.png" alt="wordpress logo"></div>
+				<div><img src="assets/logo-bourbon.png" alt="bourbon logo"></div>
+				<div><img src="assets/logo-bootstrap.png" alt="bootstrap logo"></div>
 
 			</div>
 		</div>
 		<div class="about-skills-wrapper">
-			<div class="about-skill">
+			<div class="about-skill hideme">
 				<div class="skill-icon"><i class="fa fa-code"></i></div>
 				<div class="skill-text">
 					<h4>ROCK SOLID FUNDAMENTALS</h4>
 					<p>Strong HTML5, CSS3 and JavaScript skills are the bedrock for any front-end developer.  I'm passionate about always learning and keeping my skills sharp.</p>
 				</div><!--skill-text-->
 			</div><!--about-skill-->
-			<div class="about-skill">
+			<div class="about-skill hideme">
 				<div class="skill-icon"><i class="fa fa-compass"></i></div>
 				<div class="skill-text">
 					<h4>CLEAN &AMP; SEMANTIC CODE</h4>
 					<p>I'm a stickler for clean, readable code and leave comments everywhere. When I'm working on a team, everyone is on the same page and no time is wasted explaining uncommented or poorly organized code.</p>
 				</div><!--skill-text-->
 			</div><!--about-skill-->
-			<div class="about-skill">
+			<div class="about-skill hideme">
 				<div class="skill-icon"><i class="fa fa-fighter-jet"></i></div>
 				<div class="skill-text skill-last">
 					<h4>EFFICIENT WORKFLOW</h4>
@@ -171,12 +173,12 @@ PORTFOLIO
 					<div class="triangle-left"></div>
 					<img src="assets/portfolio-01.png" alt="">
 					<div class="portfolio-share">
-						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
+						<a href="https://github.com/Jimsaurus/non-profit"><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href="#"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<!-- <a href=""><span>SHARE <i class="fa fa-share"></i></span></a> -->
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
-				<div class="portfolio-item-text">
+				<div class="portfolio-item-text hideme">
 					<p class="portfolio-tech">HTML / CSS / PHP / JS</p>
 					<h5>WordPress Template</h5>
 					<p class="portfolio-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto ullam quia nesciunt, rerum vero!</p>
@@ -190,51 +192,52 @@ PORTFOLIO
 					<div class="triangle-left"></div>
 					<img src="assets/portfolio-02.png" alt="">
 					<div class="portfolio-share">
-						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
+						<a href="https://github.com/Jimsaurus/lcbo-airmiles/tree/reskin"><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href="http://jimsaurus.github.io/lcbo-airmiles/"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<!-- <a href=""><span>SHARE <i class="fa fa-share"></i></span></a> -->
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
-				<div class="portfolio-item-text">
+				<div class="portfolio-item-text hideme">
 					<p class="portfolio-tech">HTML / CSS / API / JS / jQuery</p>
 					<h5>LCBO &amp; AirMiles App</h5>
-					<p class="portfolio-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto ullam quia nesciunt, rerum vero!</p>
+					<p class="portfolio-desc">Using the LCBO, Google Maps and Flickity API's I created an app where users can search their local LCBO locations for in stock Airmiles promotion items.</p>
 				</div><!--portfolio-item-text-->
 			</div><!--portfolio-item-->
 			
 			<!-- portfolio item 3 -->
 			<div class="portfolio-item">
-				<div class="portfolio-item-text">
+				<div class="portfolio-item-text hideme">
 					<p class="portfolio-tech">HTML / CSS / JS / API / jQuery</p>
 					<h5>JavaScript API Game</h5>
-					<p class="portfolio-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto ullam quia nesciunt, rerum vero!</p>
+					<p class="portfolio-desc">Using a mobile-first design and a fan-made Pokemon API I created a fun, interactive battle system using JavaScript and jQuery.</p>
 				</div><!--portfolio-item-text-->
 				<div class="portfolio-item-img">
 					<div class="overlay"></div>
 					<div class="triangle-right"></div>
 					<img src="assets/portfolio-03.png" alt="">
 					<div class="portfolio-share">
-						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
+						<a href="https://github.com/Jimsaurus/week-5-project"><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href="www.pocketmonsterrumble.com"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<!-- <a href=""><span>SHARE <i class="fa fa-share"></i></span></a> -->
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
 			</div><!--portfolio-item-->
 
+			<!-- portfolio item 4 -->
 			<div class="portfolio-item">
-				<div class="portfolio-item-text">
+				<div class="portfolio-item-text hideme">
 					<p class="portfolio-tech">HTML / CSS</p>
 					<h5>PSD To Responsive HTML &amp; CSS</h5>
-					<p class="portfolio-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto ullam quia nesciunt, rerum vero!</p>
+					<p class="portfolio-desc">For this project I converted a static PSD into a beautifully responsive website using HTML, CSS while incorporating three image sliders</p>
 				</div><!--portfolio-item-text-->
 				<div class="portfolio-item-img">
 					<div class="overlay"></div>
 					<div class="triangle-right"></div>
 					<img src="assets/portfolio-04.png" alt="">
 					<div class="portfolio-share">
-						<a href=""><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href=""><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a href=""><span>SHARE <i class="fa fa-share"></i></span></a>
+						<a href="https://github.com/Jimsaurus/week-3-project"><span>VIEW ON <i class="fa fa-github"></i></span></a>
+						<a href="http://jimsaurus.github.io/week-3-project/"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<!-- <a href=""><span>SHARE <i class="fa fa-share"></i></span></a> -->
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
 			</div><!--portfolio-item-->
@@ -254,11 +257,11 @@ LEARNING
 <section class="learning">
 	<div class="learning-wrapper">
 		<div class="learning-text">
-			<h3>NEVER STOP <span>LEARNING</span>,</h3>
-			<h3>NEVER STOP <span>TEACHING</span></h3>
-			<p class="tagline">Web development never stops moving forward, and neither does a good developer.</p>
-			<p class="tagline">Before each project I choose a new tool or technology to learn, keeping my mind sharp and my skills relevant.</p>
-			<p class="tagline">I am also a firm believer that the best way to learn is to teach!  Be it mentoring for <a href="http://ladieslearningcode.com/">Ladies Learning Code</a> or showing a friend a cool new CSS trick, I always enjoy sharing my knowledge with those around me.</p>
+			<h3 class='hideme'>NEVER STOP <span >LEARNING</span>,</h3>
+			<h3 class='hideme'>NEVER STOP <span >TEACHING</span></h3>
+			<p class="tagline hideme">Web development never stops moving forward, and neither does a good developer.</p>
+			<p class="tagline hideme">Before each project I choose a new tool or technology to learn, keeping my mind sharp and my skills relevant.</p>
+			<p class="tagline hideme">I am also a firm believer that the best way to learn is to teach!  Be it mentoring for <a href="http://ladieslearningcode.com/">Ladies Learning Code</a> or showing a friend a cool new CSS trick, I always enjoy sharing my knowledge with those around me.</p>
 		</div><!--learning-text-->
 	</div><!--learning-wrapper-->
 </section><!-- learning -->
@@ -301,7 +304,9 @@ FOOTER
 	<div class="footer-top">
 		<div class="footer-top-wrapper">
 			<div class="footer-brand">
-				<h6>BRAND / TWITTER FEED</h6>
+				<a class="twitter-timeline" href="https://twitter.com/Jimsaurus" data-widget-id="635645206537367552" height="200" data-chrome="transparent noborders">Tweets by @Jimsaurus</a>
+
+
 			</div><!--footer-brand-->
 			<div class="footer-quote">
 				<h6>NEED HELP WITH A PROJECT?</h6>
@@ -351,6 +356,10 @@ FOOTER
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<!-- smooth-scroll -->
 	<script src="js/jquery.smooth-scroll.js"></script>
+	<!-- typed js -->
+	<script src="js/typed.js"></script>
+	<!-- twitter -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<!-- custom scripts -->
 	<script src="js/scripts.js"></script>
 </body>
