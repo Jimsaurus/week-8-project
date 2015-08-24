@@ -1251,8 +1251,19 @@ footer {
   .nav-footer {
     padding: 0; } }
 
+@media all and (max-width: 400px) {
+  html {
+    font-size: 8px !important; }
+  header {
+    height: 600px; }
+  .hero-text {
+    padding-top: 80px;
+    width: 100%; }
+  .hero-social-icons {
+    margin: 0 5px 0 5px; } }
+
 html {
-  font-size: 62.5%; }
+  font-size: 10px; }
 
 a {
   text-decoration: none;
