@@ -741,8 +741,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  width: 50%; }
+  width: 50%;
+  overflow: hidden; }
   .portfolio-item-img img {
+    height: auto;
     width: 100%; }
 
 .portfolio-item-text {

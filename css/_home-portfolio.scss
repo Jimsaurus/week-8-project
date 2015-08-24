@@ -42,7 +42,9 @@
 	@include flexcol();
 	position: relative;
 	width:50%;
+	overflow: hidden;
 	img{
+		height: auto;
 		width: 100%;
 	}
 }

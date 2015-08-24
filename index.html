@@ -197,7 +197,7 @@ PORTFOLIO
 						<!-- <a href=""><span>SHARE <i class="fa fa-share"></i></span></a> -->
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
-				<div class="portfolio-item-text hideme">
+				<div class="portfolio-item-text">
 					<p class="portfolio-tech">HTML / CSS / API / JS / jQuery</p>
 					<h5 class="hideme">LCBO &amp; AirMiles App</h5>
 					<p class="portfolio-desc">Using the LCBO, Google Maps and Flickity API's I created an app where users can search their local LCBO locations for in stock Airmiles promotion items.</p>
@@ -206,7 +206,7 @@ PORTFOLIO
 			
 			<!-- portfolio item 3 -->
 			<div class="portfolio-item">
-				<div class="portfolio-item-text hideme">
+				<div class="portfolio-item-text">
 					<p class="portfolio-tech">HTML / CSS / JS / API / jQuery</p>
 					<h5 class="hideme">JavaScript API Game</h5>
 					<p class="portfolio-desc hideme">Using a mobile-first design and a fan-made Pokemon API I created a fun, interactive battle system using JavaScript and jQuery.</p>
@@ -217,7 +217,7 @@ PORTFOLIO
 					<img src="assets/portfolio-03.png" alt="">
 					<div class="portfolio-share">
 						<a href="https://github.com/Jimsaurus/week-5-project"><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href="www.pocketmonsterrumble.com"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
+						<a href="http://www.pocketmonsterrumble.com"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
 						<!-- <a href=""><span>SHARE <i class="fa fa-share"></i></span></a> -->
 					</div><!--portfolio-share-->
 				</div><!--portfolio-item-img-->
@@ -225,7 +225,7 @@ PORTFOLIO
 
 			<!-- portfolio item 4 -->
 			<div class="portfolio-item">
-				<div class="portfolio-item-text hideme">
+				<div class="portfolio-item-text">
 					<p class="portfolio-tech">HTML / CSS</p>
 					<h5 class="hideme">PSD To Responsive HTML &amp; CSS</h5>
 					<p class="portfolio-desc hideme">For this project I converted a static PSD into a beautifully responsive website using HTML, CSS while incorporating three image sliders</p>
@@ -278,11 +278,11 @@ CONTACT
 			<p class="tagline">I love meeting new people! Fill out the form below or shoot me an email <a href="mailto:hello@jamesmcdermid.ca?subject=Hi James!">hello@jamesmcdermid.ca</a></p>
 		</div><!--contact-header-->
 		<div class="contact-form">
-			<form action="#">
+			<form action="http://formspree.io/hello@jamesmcdermid.ca" method="POST">
 				<div class="form-top">
 					<div class="form-left">
 						<input type="text" placeholder="Full Name">
-						<input type="email" placeholder="Email Address">
+						<input type="email" name="_replyto" placeholder="Email Address">
 						<input type="text" placeholder="@Twitter">
 					</div><!--form-left-->
 					<div class="form-right">
@@ -292,6 +292,7 @@ CONTACT
 				<div class="form-bottom">
 					<button type="submit">SEND MESSAGE</button>
 				</div><!--form-bottom-->
+				<input type="hidden" name="_subject" value="New submission!" />
 			</form><!--end form-->
 		</div><!--contact-form-->
 	</div><!--contact-wrapper-->
