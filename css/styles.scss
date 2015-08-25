@@ -90,9 +90,9 @@ h6{
 span.typed-cursor{
     opacity: 1;
     font-size: 6.32rem;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s 18;
+    -moz-animation: blink 0.7s 18;
+    animation: blink 0.7s 18;
 }
 .typing{
 	display: inline-block;

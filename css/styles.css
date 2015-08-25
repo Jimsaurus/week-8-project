@@ -239,8 +239,12 @@ html {
 .nav-brand {
   width: 20%;
   text-align: right;
+  font-family: 'Delius Swash Caps', cursive;
   border-right: 1px solid #eee;
+  font-size: 1.9rem;
   padding-right: 25px; }
+  .nav-brand p {
+    margin: 10px 0; }
 
 .nav-links {
   width: 70%;
@@ -377,8 +381,6 @@ header {
       .hero-text span p:nth-child(2), .hero-text span p:nth-child(4) {
         font-size: 8rem;
         color: #2398DC; }
-      .hero-text span p:nth-child(3) {
-        margin-bottom: 0; }
   .hero-text .tagline:nth-child(3) {
     font-size: 3rem; }
 
@@ -1347,8 +1349,8 @@ h6 {
 span.typed-cursor {
   opacity: 1;
   font-size: 6.32rem;
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
+  -webkit-animation: blink 0.7s 18;
+  animation: blink 0.7s 18; }
 
 .typing {
   display: inline-block; }

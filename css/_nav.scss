@@ -24,8 +24,13 @@
 .nav-brand{
 	width: 20%;
 	text-align: right;
+	font-family: 'Delius Swash Caps', cursive;
 	border-right: 1px solid $grey;
+	font-size: 1.9rem;
 	padding-right: 25px;
+	p{
+		margin: 10px 0;
+	}
 }
 .nav-links{
 	width: 70%;
