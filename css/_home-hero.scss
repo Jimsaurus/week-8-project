@@ -1,7 +1,7 @@
 header{
-	height: 100vh;
+	height: 700px;
 	width: 100%;
-	background: url(../assets/hero-bg.jpg), linear-gradient(to bottom right,$black,black);
+	background: url(../assets/portfolio-hero.jpg), linear-gradient(to bottom right,$black,black);
 	@include bg();
 	background-blend-mode: screen;
 	position: relative;
@@ -13,16 +13,15 @@ header{
 .hero-wrapper{
 	@include section();
 	@include flexcol();
+	@include main-section();
 	//justify-content: center;
 	align-items: flex-start;
 	justify-content: flex-end;
+	padding-top: 120px;
 }
 .hero-text{
 	width: 400px;
 	text-align: left;
-	padding-top: 15vh;
-	margin-left: 5%;
-
 	p{
 		margin-top: 0;
 		margin-bottom: 5px;
@@ -69,10 +68,9 @@ header{
 }
 .hero-social{
 	@include flexrow();
-	margin-left: 10%;
-	height: 55px;
-	padding-top: 8%;
+	margin-top: 8%;
 	align-items: flex-end;
+	height: 43px;
 }
 .hero-social-icons{
 	font-size: 4rem;
@@ -83,46 +81,40 @@ header{
 		@include transition();
 	}
 	&:hover{
-		margin-bottom: 20px;
+		padding-bottom: 20px;
 		i{
 			color: $blue;
 		}
 	}
 	&:nth-child(1){
-		transform:rotate(15deg);
 		&:hover{
-			transform: rotate(0deg);
+			transform: rotate(15deg);
 		}
 	}
 	&:nth-child(2){
-		transform:rotate(-10deg);
 		&:hover{
-			transform: rotate(0deg);
+			transform: rotate(-10deg);
 		}
 	}
 	&:nth-child(3){
-		transform:rotate(8deg);
 		width: 20px;
 		&:hover{
-			transform: rotate(0deg);
+			transform: rotate(8deg);
 		}
 	}
 	&:nth-child(4){
-		transform:rotate(-10deg);
 		&:hover{
-			transform: rotate(0deg);
+			transform: rotate(-10deg);
 		}
 	}
 	&:nth-child(5){
-		transform:rotate(10deg);
 		&:hover{
-			transform: rotate(0deg);
+			transform: rotate(10deg);
 		}
 	}
 	&:nth-child(6){
-		transform:rotate(-10deg);
 		&:hover{
-			transform: rotate(0deg);
+			transform: rotate(-10deg);
 		}
 	}
 }

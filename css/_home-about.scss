@@ -16,15 +16,13 @@
 }
 .about-text{
 	@include flexcol();
-	@include span-columns(6);
-	text-align: center;
-	margin: auto;
-	padding: 10px;
+	@include span-columns(5);
+	text-align: left;
 }
 .about-headshot{
-	width: 50%;
-	margin: auto;
+	width: 60%;
 	display: none;
+	margin: auto;
 	img{
 		width: 100%;
 		border-radius: 50%;
@@ -37,19 +35,17 @@
 }
 .about-icon-wrapper{
 	@include flexrow();
-	justify-content: center;
-	div{
-		width: 41px;
-		margin-right: 8px;
-		img{
-		width: 100%;
-		}
+	align-items: flex-start;
+	justify-content: space-bewteen;
+	font-size: 6rem;
+	span{
+		width: 33%;
+		margin-bottom: 10px;
 	}
-	
 }
 .about-skills-wrapper{
 	@include flexcol();
-	@include span-columns(6);
+	@include span-columns(7);
 	padding: 10px;
 }
 .about-skill{

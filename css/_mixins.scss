@@ -21,7 +21,7 @@ $footer-bottom: #222222;
 	margin: 0 auto;
 }
 @mixin main-section(){
-	padding: 60px 20px;
+	padding: 60px 20px 60px 12%;
 }
 
 @mixin transition(){
@@ -40,8 +40,9 @@ $footer-bottom: #222222;
 	align-items: center;
 }
 @mixin bg(){
-	background-position: top right;
+	background-position: bottom right;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 @mixin box-shadow(){
 	box-shadow: 0px 2px 10px rgba(0,0,0,.3),0px 0px 1px rgba(0,0,0,.1),inset 0px 1px 0px rgba(255,255,255,.25),inset 0px -1px 0px rgba(0,0,0,.15);

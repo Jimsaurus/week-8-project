@@ -61,6 +61,9 @@
 }// 790px
 
 @media all and (max-width: 600px){
+	.hideme{
+		opacity: 1;
+	}
 	.portfolio-item{
 		@include box-shadow();
 		@include flexcol();

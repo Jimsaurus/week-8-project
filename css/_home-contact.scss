@@ -9,12 +9,11 @@
 	form{
 		@include flexcol();
 	}
-	text-align: center;
+	text-align: left;
 }//contact-wrapper
 .contact-header{
 	width:100%;
 	.tagline{
-		padding: 0 15%;
 		color: $text-grey;
 	}
 	a{
@@ -37,7 +36,7 @@
 	}
 	textarea{
 		width: 100%;
-		height: 196px;
+		height: 205px;
 		background: $bg-grey;
 		border: none;
 		resize: none;

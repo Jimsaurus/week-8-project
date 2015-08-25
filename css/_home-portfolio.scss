@@ -6,12 +6,13 @@
 }
 .portfolio-wrapper{
 	@include section();
-	padding: 50px 0;
+	@include main-section();
 	@include flexcol();
 	margin:0 auto;
 }
 .portfolio-header{
-	text-align: center;
+	width: 100%;
+	text-align: left;
 	.tagline{
 		color: $text-grey;
 	}
@@ -31,7 +32,7 @@
 }
 .portfolio-item{
 	@include flexrow();
-	width: $max-width/2 - 40px;
+	width: 100%;
 	margin: 5px;
 	@include transition();
 	&:hover{

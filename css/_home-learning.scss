@@ -12,9 +12,8 @@
 	@include main-section();
 }
 .learning-text{
-	width: 80%;
 	a{
-		color: #8E007D;
+		color: $blue;
 	}
 	.tagline{
 		text-transform: none;

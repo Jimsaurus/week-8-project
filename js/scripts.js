@@ -58,7 +58,7 @@ app.init = function(){
                backDelay: 1500,
                showCursor: true,
                callback: function() {
-               	showCursor= false;
+               		$('.typed-cursor').hide;
                }
            });
 	
