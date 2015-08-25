@@ -56,7 +56,10 @@ app.init = function(){
                backSpeed: 70,
                startDelay: 800,
                backDelay: 1500,
-               showCursor: true
+               showCursor: true,
+               callback: function() {
+               	showCursor= false;
+               }
            });
 	
 }; // end init function

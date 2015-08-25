@@ -19,7 +19,7 @@ header{
 }
 .hero-text{
 	width: 400px;
-	text-align: center;
+	text-align: left;
 	padding-top: 15vh;
 	margin-left: 5%;
 
@@ -51,7 +51,7 @@ header{
 }//hero-text
 .hero-buttons{
 	@include flexrow();
-	justify-content: center;
+	justify-content: flex-start;
 	margin-top: 20px;
 	a{
 		padding:12px 20px 10px 20px;

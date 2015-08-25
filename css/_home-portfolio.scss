@@ -21,8 +21,8 @@
 		&:hover{
 			border-bottom: 2px solid $blue;
 		}//hover
-	}
-}
+	}// a
+}// portfolio-header
 .portfolio-items-wrapper{
 	@include flexrow();
 	justify-content: center;

@@ -360,7 +360,7 @@ header {
 
 .hero-text {
   width: 400px;
-  text-align: center;
+  text-align: left;
   padding-top: 15vh;
   margin-left: 5%; }
   .hero-text p {
@@ -394,10 +394,10 @@ header {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 20px; }
   .hero-buttons a {
     padding: 12px 20px 10px 20px;
@@ -1282,7 +1282,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   overflow-x: hidden;
-  font-family: 'Josefin Sans';
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: #393939; }
 
