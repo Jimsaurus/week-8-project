@@ -33,7 +33,6 @@
 .portfolio-item{
 	@include flexrow();
 	width: 100%;
-	margin: 5px;
 	@include transition();
 	&:hover{
 		@include box-shadow();
