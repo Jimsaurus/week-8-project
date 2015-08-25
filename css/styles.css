@@ -323,8 +323,7 @@ nav.js-menu p {
 header {
   height: 700px;
   width: 100%;
-  background: url(../assets/portfolio-hero.jpg), -webkit-linear-gradient(top left, #393939, black);
-  background: url(../assets/portfolio-hero.jpg), linear-gradient(to bottom right, #393939, black);
+  background: url(../assets/portfolio-hero.jpg);
   background-position: bottom right;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 header{
 	height: 700px;
 	width: 100%;
-	background: url(../assets/portfolio-hero.jpg), linear-gradient(to bottom right,$black,black);
+	background: url(../assets/portfolio-hero.jpg);
 	@include bg();
 	background-blend-mode: screen;
 	position: relative;
