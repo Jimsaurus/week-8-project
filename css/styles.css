@@ -292,8 +292,8 @@ html {
     padding: 10px 15px;
     margin-right: 10px;
     border-bottom: 2px solid transparent;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     .nav-main li:hover {
       border-bottom: 2px solid #2398DC; }
 
@@ -317,8 +317,8 @@ html {
     display: none;
     background: none;
     border: none;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     .nav-mobile button:hover {
       color: #2398DC; }
 
@@ -406,8 +406,8 @@ header {
   .hero-buttons a {
     padding: 12px 20px 10px 20px;
     border: 1px solid #393939;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease;
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease;
     border-radius: 25px;
     font-size: 1.2rem;
     margin-right: 10px; }
@@ -439,12 +439,12 @@ header {
 .hero-social-icons {
   font-size: 4rem;
   margin-right: 20px;
-  -webkit-transition: all 0.8s ease;
-          transition: all 0.8s ease;
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
   width: 35px; }
   .hero-social-icons i {
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
   .hero-social-icons:hover {
     padding-bottom: 20px; }
     .hero-social-icons:hover i {
@@ -457,12 +457,10 @@ header {
     -webkit-transform: rotate(-10deg);
         -ms-transform: rotate(-10deg);
             transform: rotate(-10deg); }
-  .hero-social-icons:nth-child(3) {
-    width: 20px; }
-    .hero-social-icons:nth-child(3):hover {
-      -webkit-transform: rotate(8deg);
-          -ms-transform: rotate(8deg);
-              transform: rotate(8deg); }
+  .hero-social-icons:nth-child(3):hover {
+    -webkit-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+            transform: rotate(8deg); }
   .hero-social-icons:nth-child(4):hover {
     -webkit-transform: rotate(-10deg);
         -ms-transform: rotate(-10deg);
@@ -540,8 +538,8 @@ header {
   margin-bottom: 30px; }
   .about-headshot img {
     width: 100%;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     .about-headshot img:hover {
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
 
@@ -660,8 +658,8 @@ header {
     color: #838383; }
   .portfolio-header a {
     color: #2398DC;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     .portfolio-header a:hover {
       border-bottom: 2px solid #2398DC; }
 
@@ -699,8 +697,8 @@ header {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   width: 100%;
-  -webkit-transition: all 0.8s ease;
-          transition: all 0.8s ease; }
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease; }
   .portfolio-item:hover {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
     .portfolio-item:hover .portfolio-item-img img {
@@ -772,10 +770,10 @@ header {
   bottom: 33px;
   left: 0;
   font-size: 1.2rem;
-  width: 100%;
-  -webkit-transition: all 0.8s ease;
-          transition: all 0.8s ease; }
+  width: 100%; }
   .portfolio-share a {
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease;
     padding: 1rem;
     margin: 0.2rem;
     background: #E75C78;
@@ -824,8 +822,8 @@ header {
   padding: 60px 6% 60px 6%; }
 
 .learning-text a {
-  -webkit-transition: all 0.8s ease;
-          transition: all 0.8s ease;
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
   color: #7bc1ea; }
   .learning-text a:hover {
     text-decoration: underline; }
@@ -888,8 +886,8 @@ header {
     color: #838383; }
   .contact-header a {
     color: #2398DC;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     .contact-header a:hover {
       border-bottom: 2px solid #2398DC; }
 
@@ -959,8 +957,8 @@ header {
     font-size: 1rem;
     padding: 14px 25px 12px 25px;
     border-radius: 25px;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     .form-bottom button:hover {
       background: #fff;
       color: #2398DC;
@@ -989,8 +987,8 @@ footer {
   font-size: 1.2rem; }
   footer a {
     color: #838383;
-    -webkit-transition: all 0.8s ease;
-            transition: all 0.8s ease; }
+    -webkit-transition: all 0.6s ease;
+            transition: all 0.6s ease; }
     footer a:hover {
       color: #2398DC; }
   footer p {
@@ -1352,8 +1350,8 @@ h6 {
   margin-top: auto;
   padding: 18px 10px;
   border: 2px solid #e4e1d1;
-  -webkit-transition: all 0.8s ease;
-          transition: all 0.8s ease; }
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease; }
   .brand-jm a:hover {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
 
@@ -1367,9 +1365,9 @@ h6 {
 
 span.typed-cursor {
   opacity: 1;
-  font-size: 6.32rem;
-  -webkit-animation: blink 0.7s 22;
-  animation: blink 0.7s 22; }
+  font-size: 8rem;
+  -webkit-animation: blink 0.8s infinite;
+  animation: blink 0.8s infinite; }
 
 .typing {
   display: inline-block; }

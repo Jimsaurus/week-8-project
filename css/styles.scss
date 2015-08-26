@@ -89,10 +89,10 @@ h6{
 }
 span.typed-cursor{
     opacity: 1;
-    font-size: 6.32rem;
-    -webkit-animation: blink 0.7s 22;
-    -moz-animation: blink 0.7s 22;
-    animation: blink 0.7s 22;
+    font-size: 8rem;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
 }
 .typing{
 	display: inline-block;

@@ -67,16 +67,17 @@ app.init = function(){
 	// Typed.JS Options
 	// =============================================================================
     $(".typing").typed({
-               strings: ["LEARN", "LAUGH", "TEACH", "CREATE"],
+               strings: ["LEARN", "TEACH", "CREATE"],
                typeSpeed: 150,
                backSpeed: 70,
                startDelay: 800,
                backDelay: 1500,
                showCursor: true,
-               //loop: true,
+               loop: true,
                //loopCount: 3,
                callback: function() {
-               		$('.typed-cursor').css('opacity', 0);
+               		//$('.typed-cursor').css('opacity', 0);
+               		
                }
     });
 	
@@ -100,8 +101,28 @@ app.init = function(){
 
 
    		});//end window scroll
-
    });
+
+   // =============================================================================
+   // Share Button Pop-up
+   // =============================================================================
+
+   $('.popup').click(function(event) {
+       var width  = 575,
+           height = 400,
+           left   = ($(window).width()  - width)  / 2,
+           top    = ($(window).height() - height) / 2,
+           url    = this.href,
+           opts   = 'status=1' +
+                    ',width='  + width  +
+                    ',height=' + height +
+                    ',top='    + top    +
+                    ',left='   + left;
+       
+       window.open(url, 'twitter', opts);
+    
+       return false;
+     });
 
 
 
