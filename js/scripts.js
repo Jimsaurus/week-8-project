@@ -17,38 +17,45 @@ app.init = function(){
 	  });
 	//smooth scroll
 	$('a').smoothScroll();
-	//nav fly
-	$(window).scroll(function () {
-	    if($(this).scrollTop() > 50){
-	        if (!$('.nav-top').hasClass('main-fly')){
-	            $('.nav-top').stop().addClass('main-fly').css('top', '-50px').animate({
-	                    'top': '0px'
-	                }, 500);
-	        }
-	    }
-	    else
-	    {
-	        $('.nav-top').removeClass('main-fly');
-	    }
-	});
 
-	//show on scroll
-	/* Every time the window is scrolled ... */
-   $(window).scroll( function(){
-       /* Check the location of each desired element */
-       $('.hideme').each( function(i){
-           
-           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-           var bottom_of_window = $(window).scrollTop() + $(window).height();
-           
-           /* If the object is completely visible in the window, fade it in */
-           if( bottom_of_window > (bottom_of_object - 200) ){
-               
-               $(this).animate({'opacity':'1'},500);
-                   
-           }
-       }); 
-   });
+	if (window.innerWidth < 650){
+		$('.hideme').css('opacity', 1);
+		$('.nav-top').css('background', 'white');
+
+	} else{
+		//show on scroll
+		/* Every time the window is scrolled ... */
+	   $(window).scroll( function(){
+	       /* Check the location of each desired element */
+	       $('.hideme').each( function(i){
+	           
+	           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	           var bottom_of_window = $(window).scrollTop() + $(window).height();
+	           
+	           /* If the object is completely visible in the window, fade it in */
+	           if( bottom_of_window > (bottom_of_object - 200) ){
+	               $(this).animate({'opacity':'1'},500);
+	           }
+	       }); 
+	   });
+
+	   //nav fly
+	   $(window).scroll(function () {
+	       if($(this).scrollTop() > 50){
+	           if (!$('.nav-top').hasClass('main-fly')){
+	               $('.nav-top').stop().addClass('main-fly').css('top', '-50px').animate({
+	                       'top': '0px'
+	                   }, 500);
+	           }
+	       }
+	       else
+	       {
+	           $('.nav-top').removeClass('main-fly');
+	       }
+	   });
+
+	}
+	
 
    $(".typing").typed({
                strings: ["LEARN", "LAUGH", "TEACH", "CREATE"],

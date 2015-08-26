@@ -202,7 +202,8 @@ html {
 .nav-top {
   border-bottom: 1px solid #eee;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
 
 .main-fly {
   position: fixed;
@@ -325,7 +326,7 @@ nav.js-menu p {
   margin: 30px 15px; }
 
 header {
-  height: 700px;
+  height: auto;
   width: 100%;
   background: url(../assets/portfolio-hero.jpg);
   background-position: bottom right;
@@ -1105,8 +1106,7 @@ footer {
 
 @media all and (max-width: 925px) {
   header {
-    background: url(../assets/portfolio-hero-mobile.jpg), -webkit-linear-gradient(top left, #393939, black);
-    background: url(../assets/portfolio-hero-mobile.jpg), linear-gradient(to bottom right, #393939, black);
+    background: url(../assets/portfolio-hero-mobile.jpg);
     background-position: bottom right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1201,6 +1201,9 @@ footer {
 @media all and (max-width: 650px) {
   header {
     background-image: none; }
+  .nav-top {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+    border-bottom: none; }
   .about-headshot {
     display: block; }
   .portfolio-item {

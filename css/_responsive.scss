@@ -12,7 +12,7 @@
 }
 @media all and (max-width: 925px){
 	header{
-		background: url(../assets/portfolio-hero-mobile.jpg), linear-gradient(to bottom right,$black,black);
+		background: url(../assets/portfolio-hero-mobile.jpg);
 		@include bg();
 		background-blend-mode: screen;
 		//background: linear-gradient(to bottom right,$white,lighten($light-blue, 20%));
@@ -90,6 +90,10 @@
 @media all and (max-width: 650px){
 	header{
 		background-image: none;
+	}
+	.nav-top{
+		@include box-shadow();
+	    border-bottom: none;
 	}
 	.about-headshot{
 		display: block;
