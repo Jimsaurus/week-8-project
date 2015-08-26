@@ -21,11 +21,11 @@ $footer-bottom: #222222;
 	margin: 0 auto;
 }
 @mixin main-section(){
-	padding: 60px 20px 60px 12%;
+	padding: 60px 6% 60px 6%;
 }
 
 @mixin transition(){
-	transition: all .3s ease;
+	transition: all .5s ease;
 }
 
 @mixin flexrow(){

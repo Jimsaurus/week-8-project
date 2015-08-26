@@ -13,7 +13,11 @@
 }
 .learning-text{
 	a{
-		color: $blue;
+		@include transition();
+		color: lighten($blue, 20%);
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 	.tagline{
 		text-transform: none;

@@ -40,6 +40,9 @@
 	span{
 		width: 33%;
 		margin-bottom: 10px;
+		&:nth-child(8){
+			font-size: 7rem;
+		}
 	}
 }
 .about-skills-wrapper{

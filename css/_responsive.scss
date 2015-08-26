@@ -72,6 +72,9 @@
 		font-size: 4rem;
 		span{
 			width: 20%;
+			&:nth-child(8){
+				font-size: 5.5rem;
+			}
 		}
 	}
 	.about-text{

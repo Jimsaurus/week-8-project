@@ -33,7 +33,7 @@ app.init = function(){
 	           var bottom_of_window = $(window).scrollTop() + $(window).height();
 	           
 	           /* If the object is completely visible in the window, fade it in */
-	           if( bottom_of_window > (bottom_of_object - 200) ){
+	           if( bottom_of_window > (bottom_of_object - 100) ){
 	               $(this).animate({'opacity':'1'},500);
 	           }
 	       }); 
@@ -64,6 +64,8 @@ app.init = function(){
                startDelay: 800,
                backDelay: 1500,
                showCursor: true,
+               //loop: true,
+               //loopCount: 3,
                callback: function() {
                		$('.typed-cursor').css('opacity', 0);
                }
