@@ -1252,8 +1252,12 @@ footer {
     width: 34px; } }
 
 @media all and (max-width: 450px) {
+  header {
+    height: auto; }
   html {
     font-size: 8px !important; }
+  .hideme {
+    opacity: 1; }
   .hero-text .tagline:nth-child(3) {
     font-size: 2.5rem; }
   .hero-social-icons {
@@ -1265,9 +1269,9 @@ footer {
   .contact-wrapper {
     padding: 60px 20px; }
   .hero-wrapper {
-    padding-top: 120px; }
+    padding-top: 80px; }
   .footer {
-    font-size: 1rem; } }
+    font-size: 0.9rem; } }
 
 @media all and (min-width: 1330px) {
   header {
