@@ -703,6 +703,10 @@ header {
           transition: all 0.5s ease; }
   .portfolio-item:hover {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.15); }
+    .portfolio-item:hover .portfolio-item-img img {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
 
 .portfolio-item-img {
   display: -webkit-box;
@@ -726,6 +730,8 @@ header {
   width: 50%;
   overflow: hidden; }
   .portfolio-item-img img {
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
     height: auto;
     width: 100%; }
 
@@ -790,7 +796,8 @@ header {
   border-color: transparent #F7F7F7 transparent transparent;
   position: absolute;
   top: 35px;
-  right: 0; }
+  right: 0;
+  z-index: 50; }
 
 .triangle-right {
   left: 0;
@@ -806,12 +813,9 @@ header {
   right: 0; }
 
 .learning {
-  background: url(../assets/learning-bg.jpg), -webkit-linear-gradient(315deg, #393939, rgba(35, 152, 220, 0.1));
-  background: url(../assets/learning-bg.jpg), linear-gradient(135deg, #393939, rgba(35, 152, 220, 0.1));
-  background-position: bottom right;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../assets/learning-bg.jpg), rgba(57, 57, 57, 0.6);
   background-blend-mode: darken;
+  background-position: 50% 0 repeat fixed;
   color: #f5f4ee; }
 
 .learning-wrapper {

@@ -1,29 +1,35 @@
 // =============================================================================
 // DECLARE GLOBAL APP OBJECT & variables
 // =============================================================================
-
 var app = {};
-
-
-
 // =============================================================================
 // INIT FUNCTION
 // =============================================================================
 app.init = function(){
-	//mobile van menu
+
+	// =============================================================================
+	// Mobile Menu
+	// =============================================================================
 	$('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
 	    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
 	    e.preventDefault();
 	  });
-	//smooth scroll
+	// =============================================================================
+	// Smooth Scroll
+	// =============================================================================
 	$('a').smoothScroll();
 
+	// =============================================================================
+	// Mobile Check / turn off effect
+	// =============================================================================
 	if (window.innerWidth < 650){
 		$('.hideme').css('opacity', 1);
 		$('.nav-top').css('background', 'white');
 
 	} else{
-		//show on scroll
+		// =============================================================================
+		// Fade In Effect
+		// =============================================================================
 		/* Every time the window is scrolled ... */
 	   $(window).scroll( function(){
 	       /* Check the location of each desired element */
@@ -39,7 +45,9 @@ app.init = function(){
 	       }); 
 	   });
 
-	   //nav fly
+	   // =============================================================================
+	   // Drop Down Nav
+	   // =============================================================================
 	   $(window).scroll(function () {
 	       if($(this).scrollTop() > 50){
 	           if (!$('.nav-top').hasClass('main-fly')){
@@ -53,11 +61,12 @@ app.init = function(){
 	           $('.nav-top').removeClass('main-fly');
 	       }
 	   });
-
 	}
 	
-
-   $(".typing").typed({
+	// =============================================================================
+	// Typed.JS Options
+	// =============================================================================
+    $(".typing").typed({
                strings: ["LEARN", "LAUGH", "TEACH", "CREATE"],
                typeSpeed: 150,
                backSpeed: 70,
@@ -69,8 +78,33 @@ app.init = function(){
                callback: function() {
                		$('.typed-cursor').css('opacity', 0);
                }
-           });
+    });
 	
+   // =============================================================================
+   // Parallax Scroll
+   // =============================================================================
+   //cache the window object...makes loading a little faster
+   var $window = $(window);
+   //Parallax Effect
+   $('section[data-type="background"]').each(function(){
+
+   		var $bgobj = $(this); //assigning the object
+
+   		$($window).scroll(function(){
+   			//scroll the bg at var speed...the yPos is a negative val casue we're scrolling up
+   			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+   			//put together our final bg position
+   			var coords = '50% '+ yPos + 'px';
+   			//move the background
+   			$bgobj.css({backgroundPosition: coords});
+
+
+   		});//end window scroll
+
+   });
+
+
+
 }; // end init function
 
 // =============================================================================

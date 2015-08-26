@@ -2,9 +2,9 @@
 // LEARNING STYLES
 // ===================================================
 .learning{
-	background: url(../assets/learning-bg.jpg), linear-gradient(135deg, rgba($black, 1), rgba($blue, .1));
-	@include bg();
+	background: url(../assets/learning-bg.jpg), rgba($black, .6);
 	background-blend-mode: darken;
+	background-position: 50% 0 repeat fixed;
 	color: $white;
 }
 .learning-wrapper{
