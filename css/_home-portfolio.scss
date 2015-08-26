@@ -47,7 +47,7 @@
 	width:50%;
 	overflow: hidden;
 	img{
-		@include transition();
+		transition: all 6s ease;
 		height: auto;
 		width: 100%;
 	}
