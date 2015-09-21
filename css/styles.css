@@ -1365,7 +1365,7 @@ h6 {
 
 span.typed-cursor {
   opacity: 1;
-  font-size: 8rem;
+  font-size: 7rem;
   -webkit-animation: blink 0.8s infinite;
   animation: blink 0.8s infinite; }
 
