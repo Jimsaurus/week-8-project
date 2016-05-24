@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var jshint = require('gulp-jshint');
 var autoprefixer = require('gulp-autoprefixer');
+var cssminify = require('gulp-minify-css');
 var browserSync = require('browser-sync').create();
 
 //setup gulp task....can be named anything...we named it styles
@@ -19,6 +20,7 @@ gulp.task('styles', function(){
 			//autoprefixer
 			.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 			// gulp.dest() tells concat where to put finished css file!
+			.pipe(cssminify())
 			.pipe(gulp.dest('css/'))
 			.pipe(browserSync.stream());
 });
