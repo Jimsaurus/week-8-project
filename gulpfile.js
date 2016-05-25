@@ -1,10 +1,11 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var jshint = require('gulp-jshint');
-var autoprefixer = require('gulp-autoprefixer');
-var cssminify = require('gulp-minify-css');
-var browserSync = require('browser-sync').create();
+var gulp = 			require('gulp');
+var sass = 			require('gulp-sass');
+var concat = 		require('gulp-concat');
+var jshint = 		require('gulp-jshint');
+var autoprefixer = 	require('gulp-autoprefixer');
+var cssminify = 	require('gulp-minify-css');
+var uglify 	= 		require('gulp-uglify');
+// var browserSync = require('browser-sync').create();
 
 //setup gulp task....can be named anything...we named it styles
 gulp.task('styles', function(){
@@ -21,8 +22,9 @@ gulp.task('styles', function(){
 			.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 			// gulp.dest() tells concat where to put finished css file!
 			.pipe(cssminify())
-			.pipe(gulp.dest('css/'))
-			.pipe(browserSync.stream());
+			.pipe(gulp.dest('css/'));
+
+			// .pipe(browserSync.stream());
 });
 
 // reload task
@@ -40,16 +42,22 @@ gulp.task('browser-sync', function() {
         proxy: "http://localhost:8888/bootcamp-projects/week-8-project"
     });
 });
+gulp.task('compress', function() {
+  return gulp.src('js/*.js')
+  	.pipe(concat('app.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('js/'));
+});
 gulp.task('watch', function(){
 	gulp.watch('css/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['jshint']);
-	gulp.watch('*.html', ['bs-reload']);
+	// gulp.watch('*.html', ['bs-reload']);
 });
+gulp.task('production-compile', ['styles', 'compress']);
+gulp.task('default', ['styles', 'jshint', 'watch']);
 
-gulp.task('default', ['browser-sync', 'styles', 'jshint', 'watch']);
 
-
-
+// removed 'browser-sync' from gulp.task
 
 
 
