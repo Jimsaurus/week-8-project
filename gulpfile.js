@@ -5,6 +5,7 @@ var jshint = 		require('gulp-jshint');
 var autoprefixer = 	require('gulp-autoprefixer');
 var cssminify = 	require('gulp-minify-css');
 var uglify 	= 		require('gulp-uglify');
+var htmlmin = 		require('gulp-htmlmin');
 // var browserSync = require('browser-sync').create();
 
 //setup gulp task....can be named anything...we named it styles
@@ -47,6 +48,11 @@ gulp.task('compress', function() {
   	.pipe(concat('app.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('js/'));
+});
+gulp.task('htmlmin', function() {
+  return gulp.src('*.html')
+    .pipe(htmlmin({removeComments: true}))
+    .pipe(gulp.dest(''))
 });
 gulp.task('watch', function(){
 	gulp.watch('css/*.scss', ['styles']);
