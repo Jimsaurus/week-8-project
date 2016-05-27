@@ -50,9 +50,9 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('js/'));
 });
 gulp.task('htmlmin', function() {
-  return gulp.src('*.html')
-    .pipe(htmlmin({removeComments: true}))
-    .pipe(gulp.dest(''))
+  return gulp.src('index-dev.html')
+    .pipe(htmlmin({removeComments: true, collapseWhitespace: true}))
+    .pipe(gulp.dest('index.html'))
 });
 gulp.task('watch', function(){
 	gulp.watch('css/*.scss', ['styles']);
