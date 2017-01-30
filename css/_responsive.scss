@@ -139,6 +139,9 @@
 	.hideme{
 		opacity: 1;
 	}
+	.hero-text{
+		width: 100%;
+	}
 	.hero-text .tagline:nth-child(3){
 		font-size: 2.5rem;
 	}
@@ -153,7 +156,7 @@
 		padding: 60px 20px; 
 	}
 	.hero-wrapper{
-		padding-top: 80px;
+		padding-top: 60px;
 	}
 	.footer{
 		font-size: 0.9rem;

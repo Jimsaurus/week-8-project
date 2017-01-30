@@ -28,13 +28,13 @@ header{
 	}
 	span{
 		font-family: 'Coustard', serif;
-		font-size: 5rem;
+		font-size: 4rem;
 		margin-bottom: 20px;
 		p{
 			line-height: 1;
 			letter-spacing: 2px;
 			&:nth-child(2), &:nth-child(4){
-				font-size: 8rem;
+				font-size: 5.8rem;
 				color: $blue;
 			}//nth
 			&:nth-child(3){

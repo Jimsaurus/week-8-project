@@ -2,7 +2,6 @@
 // NAV STYLES
 // ===================================================
 .nav-top{
-	border-bottom: 1px solid $grey;
 	position:fixed;
 	width: 100%;
 	z-index: 100;
@@ -24,6 +23,7 @@
 	align-items: stretch;
 }
 .nav-brand{
+	display: none;
 	width: 20%;
 	text-align: right;
 	font-family: 'Delius Swash Caps', cursive;
@@ -34,7 +34,7 @@
 	}
 }
 .nav-links{
-	width: 70%;
+	width: 100%;
 	@include flexrow();
 	justify-content: flex-end;
 	align-items: center;
@@ -68,6 +68,7 @@
 			color: $blue;
 		}
 	}
+	display:none;
 }//nav-mobile
 
 nav.js-menu p{
