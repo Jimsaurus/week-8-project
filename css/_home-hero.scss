@@ -53,16 +53,17 @@ header{
 	justify-content: flex-start;
 	margin-top: 20px;
 	a{
-		padding:12px 20px 10px 20px;
-		border: 1px solid $black;
+		padding:15px 25px 12px 25px;
+		border: 2px solid $black;
 		@include transition();
 		border-radius: 25px;
-		font-size: 1.2rem;
+		// font-size: 1.2rem;
 		margin-right: 10px;
+		// font-weight: bold;
 		&:hover{
 			background: $blue;
 			color: $white;
-			border: 1px solid $blue;
+			border: 2px solid $blue;
 		}
 	}
 }
