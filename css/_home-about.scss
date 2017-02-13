@@ -19,6 +19,9 @@
 	@include span-columns(5);
 	text-align: left;
 	padding-top: 50px;
+	a{
+		color: $green;
+	}
 }
 .about-headshot{
 	width: 100%;
@@ -54,6 +57,7 @@
 	@include flexrow();
 	h4{
 		margin:5px 0 10px 0;
+		font-size: 30px;
 	}
 }
 .skill-icon{

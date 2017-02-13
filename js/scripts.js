@@ -67,7 +67,7 @@ app.init = function(){
 	// Typed.JS Options
 	// =============================================================================
     $(".typing").typed({
-               strings: ["Wordpress", "Shopify", "SEO"],
+               strings: ["Wordpress", "Shopify", "Branding"],
                typeSpeed: 150,
                backSpeed: 70,
                startDelay: 800,
